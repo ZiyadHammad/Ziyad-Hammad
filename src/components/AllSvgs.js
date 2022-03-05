@@ -1,3 +1,5 @@
+// Creating Svg as react components
+
 export const PowerBtn = (props) => {
   return (
     <svg
