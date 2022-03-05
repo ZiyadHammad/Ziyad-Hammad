@@ -32,7 +32,6 @@ right: calc(1rem + 2vw);
 text-decoration: none;
 z-index: 1;
 `
-
 const Blog = styled(NavLink)`
 color: ${props => props.theme.text};
 position: absolute;
@@ -43,7 +42,7 @@ text-decoration: none;
 z-index: 1;
 `
 const Work = styled(NavLink)`
-color: ${props => props.theme.text};
+color: ${props => props.click ? props.theme.body : props.theme.text };
 position: absolute;
 top 50%;
 left: calc(1rem + 2vw);
@@ -51,9 +50,8 @@ transform: rotate(-90deg) translate(-50%, -50%);
 text-decoration: none;
 z-index: 1;
 `
-
 const About = styled(NavLink)`
-color: ${props => props.theme.text};
+color: ${props => props.click ? props.theme.body : props.theme.text };
 text-decoration: none;
 z-index: 1;
 `
@@ -72,7 +70,6 @@ width: 100%;
 display: flex;
 justify-content: space-evenly;
 `
-
 const rotate = keyframes`
 from{
   transform: rotate(0)
@@ -128,8 +125,8 @@ function Main() {
     <MainContainer>
       <Container>
         <PowerButton />
-        <LogoComponent />
-        <SocialIcons />
+        <LogoComponent theme={click ? 'dark' :'light'} />
+        <SocialIcons theme={click ? 'dark' :'light'} />
         <DarkDiv click={click} />
 
           <Center click={click} >
@@ -150,14 +147,14 @@ function Main() {
           </h3>
         </Blog>
 
-        <Work to="/work">
+        <Work to="/work" click={click} >
           <h3>
             Work
           </h3>
         </Work>
 
      <BottomBar>
-        <About to="/about">
+        <About to="/about" click={click} >
           <h3>
             About
           </h3>
