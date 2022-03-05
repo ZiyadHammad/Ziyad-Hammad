@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import { motion } from 'framer-motion'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import styled, {keyframes} from "styled-components"
 import LogoComponent from '../subComponents/LogoComponent'
@@ -136,33 +137,50 @@ function Main() {
           </Center>
         
         <Resume target="_blank" to={{pathname:"https://drive.google.com/file/d/1aWIzhp2ovUGvPkZTsaJUEJhoQm26DoTq/view"}}>
-          <h3>
-            Resume
-          </h3>
+          <motion.h2
+          
+            whileHover={{scale: 1.1}}
+          whileTap={{scale: 0.9}}
+            
+          >
+            Resume.
+          </motion.h2>
         </Resume>
 
         <Blog to="/blog">
-          <h3>
-            Blog
-          </h3>
+           <motion.h2
+            whileHover={{scale: 1.1}}
+            whileTap={{scale: 0.9}} 
+            >
+              Blog.
+           </motion.h2>
         </Blog>
 
         <Work to="/work" click={click} >
-          <h3>
-            Work
-          </h3>
+        <motion.h2
+            whileHover={{scale: 1.1}}
+            whileTap={{scale: 0.9}} 
+            >
+              Work
+           </motion.h2>
         </Work>
 
      <BottomBar>
         <About to="/about" click={click} >
-          <h3>
-            About
-          </h3>
+        <motion.h2
+            whileHover={{scale: 1.1}}
+            whileTap={{scale: 0.9}} 
+            >
+              About.
+           </motion.h2>
         </About>
         <Skills to="/skills">
-          <h3>
-           My Skills
-          </h3>
+        <motion.h2
+            whileHover={{scale: 1.1}}
+            whileTap={{scale: 0.9}} 
+            >
+              My Skills.
+           </motion.h2>
         </Skills>
     </BottomBar>
 

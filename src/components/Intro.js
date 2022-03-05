@@ -56,18 +56,26 @@ justify-content: space-evenly;
 
 function Intro() {
   return (
-    <Box>
+    <Box
+      initial={{ height: 0 }}
+      animate={{ height: "55vh" }}
+      transition={{type: "spring", duration:2, delay:1}}
+    >
       <SubBox>
         <Text>
           <h1>Hi,</h1>
-          <h3>I'm Ziyad Hammad</h3>
+          <h3>I'm Ziyad Hammad.</h3>
           <h6>Web Developer * Content Creator * Designer</h6>
         </Text>
       </SubBox>
       <SubBox>
-        <div>
+        <motion.div
+           initial={{ opacity: 0 }}
+           animate={{ opacity: 1 }}
+           transition={{type: "spring", duration:1, delay:2}}
+        >
           <img className='Me' src={Me} alt="Profile Picture" />
-        </div>
+        </motion.div>
       </SubBox>
     </Box>
   )
