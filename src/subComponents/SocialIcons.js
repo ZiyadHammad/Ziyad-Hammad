@@ -13,6 +13,17 @@ bottom: 0;
 left: 2rem;
 
 z-index: 3;
+
+&>*:not(:last-child){
+  margin: .5rem 0;
+}
+`
+
+const Line = styled.span`
+width: 2px;
+height: 8rem;
+background-color: ${props => props.theme.text}
+
 `
 
 function SocialIcons() {
@@ -20,23 +31,24 @@ function SocialIcons() {
     <Icons>
 
       <div>
-        <NavLink to="/">
-          <Github width={25} height={25} fill="currentColor" />
+        <NavLink style={{color: "inherit"}} target="_blank" to={{pathname:"https://github.com/ZiyadHammad"}}>
+          <Github  width={25} height={25} fill="currentColor" />
         </NavLink>
       </div>
 
       <div>
-        <NavLink to="/">
+        <NavLink style={{color: "inherit"}} target="_blank" to={{pathname:"https://www.linkedin.com/in/ziyad-hammad/"}}>
           <LinkedIn width={25} height={25} fill="currentColor" />
         </NavLink>
       </div>
 
       <div>
-        <NavLink to="/">
+        <NavLink style={{color: "inherit"}} target="_blank" to={{pathname:"https://twitter.com/_ZiyadHammad"}}>
           <Twitter width={25} height={25} fill="currentColor" />
         </NavLink>
       </div>
 
+      <Line />
     </Icons>
   )
 }
