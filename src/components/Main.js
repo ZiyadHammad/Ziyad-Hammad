@@ -1,9 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { NavLink } from 'react-router-dom'
-import styled from "styled-components"
+import styled, {keyframes} from "styled-components"
 import LogoComponent from '../subComponents/LogoComponent'
 import PowerButton from '../subComponents/PowerButton'
 import SocialIcons from '../subComponents/SocialIcons'
+import {YinYang} from "./AllSvgs"
 
 
 
@@ -72,13 +73,57 @@ display: flex;
 justify-content: space-evenly;
 `
 
+const rotate = keyframes`
+from{
+  transform: rotate(0)
+}
+to{
+  transform: rotate(360deg)
+}
+`
+const Center = styled.div`
+position: absolute;
+top: ${props => props.click ? "85%" : "50%"};
+left: ${props => props.click ? "92%" : "50%"};
+transform: translate(-50%, -50%);
+border: none;
+outline: none;
+background-color: transparent;
+cursor: pointer;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+transition: all 1s ease;
+
+&>:first-child{
+  animation: ${rotate} infinite 1.5s linear;
+}
+
+&>:last-child{
+  display: ${props => props.click ? "none" : "inline-block"};
+  padding-top: 2rem;
+}
+
+`
+
 function Main() {
+  const [click, setClick] = useState(false)
+
+  const handleClick = () => setClick(!click)
   return (
     <MainContainer>
       <Container>
         <PowerButton />
         <LogoComponent />
         <SocialIcons />
+
+          <Center click={click} >
+            <YinYang onClick={() => handleClick()} width={click ? "120" : "200"} height={click ? "120" : "200"} fill="currentColor" />
+            <span>Click Here</span>
+          </Center>
+        
 
         <Resume target="_blank" to={{pathname:"https://drive.google.com/file/d/1aWIzhp2ovUGvPkZTsaJUEJhoQm26DoTq/view"}}>
           <h3>
