@@ -107,6 +107,18 @@ transition: all 1s ease;
 }
 
 `
+const DarkDiv = styled.div`
+position: absolute;
+top: 0;
+bottom: 0;
+background-color: #000;
+right: 50%;
+width: ${props => props.click ? "50%" : "0%"};
+height:${props => props.click ? "100%" : "0%"};
+z-index: 1; 
+transition: height 0.5s ease, width 1s ease 0.5s;
+`
+
 
 function Main() {
   const [click, setClick] = useState(false)
@@ -118,6 +130,7 @@ function Main() {
         <PowerButton />
         <LogoComponent />
         <SocialIcons />
+        <DarkDiv click={click} />
 
           <Center click={click} >
             <YinYang onClick={() => handleClick()} width={click ? "120" : "200"} height={click ? "120" : "200"} fill="currentColor" />
