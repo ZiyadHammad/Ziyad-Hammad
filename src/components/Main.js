@@ -4,7 +4,8 @@ import styled, {keyframes} from "styled-components"
 import LogoComponent from '../subComponents/LogoComponent'
 import PowerButton from '../subComponents/PowerButton'
 import SocialIcons from '../subComponents/SocialIcons'
-import {YinYang} from "./AllSvgs"
+import { YinYang } from "./AllSvgs"
+import Intro from './Intro'
 
 
 
@@ -134,7 +135,6 @@ function Main() {
             <span>Click Here</span>
           </Center>
         
-
         <Resume target="_blank" to={{pathname:"https://drive.google.com/file/d/1aWIzhp2ovUGvPkZTsaJUEJhoQm26DoTq/view"}}>
           <h3>
             Resume
@@ -167,6 +167,7 @@ function Main() {
     </BottomBar>
 
       </Container>
+      {click ? <Intro click={click} /> : null}
     </MainContainer>
   )
 }
