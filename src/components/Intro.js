@@ -38,6 +38,12 @@ display: flex;
   width: 100%;
   height: auto;
 }
+
+img{
+  bottom: 0;
+  position: absolute;
+  height:30rem;
+}
 `
 const Text = styled.div`
 font-size: calc(1em + 1.5vw);
@@ -74,7 +80,7 @@ function Intro() {
            animate={{ opacity: 1 }}
            transition={{type: "spring", duration:1, delay:2}}
         >
-          <img className='Me' src={Me} alt="Profile Picture" />
+          <img className='Me' src={Me} alt="Profile Picture"/>
         </motion.div>
       </SubBox>
     </Box>

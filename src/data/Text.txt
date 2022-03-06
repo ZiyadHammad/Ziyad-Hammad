@@ -4,24 +4,6 @@ LinkedIn "https://www.linkedin.com/in/ziyad-hammad/"
 Twitter "https://twitter.com/_ZiyadHammad"
 
 
-Skills
-----------------------------------------------
-I love to create design which speaks, Keep it clean, minimal and simple.
-I LIKE TO DESIGN
-Web Design
-Mobile Apps
-TOOLS
-Figma
-
-I value business or brand for which i'm creating, thus i enjoy bringing new ideas to life.
-SKILLS
-Html, Css, Js, React, Redux, Sass, Bootstrap, Tailwind, Firebase etc.
-
-TOOLS
-VScode, Github, Codepen etc.
-
-----------------------------------------------
-
 
 
 
