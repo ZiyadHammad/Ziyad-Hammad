@@ -105,6 +105,9 @@ I love to create design which speaks, Keep it clean, minimal and simple.
 <ul>
     <li>
        Figma
+                </li>
+                <li>
+       Wireframes
     </li>
     
 </ul>
@@ -116,18 +119,27 @@ I love to create design which speaks, Keep it clean, minimal and simple.
     <Develope width={40} height={40} /> Frontend Developer
 </Title>
 <Description>
-I value business or brand for which i'm creating, thus i enjoy bringing new ideas to life.
-</Description>
-<Description>
 <strong>Skills</strong>
 <p>
-Html, Css, Js, React, Redux, Sass, Bootstrap, Tailwind, Firebase etc.
+Js, Ruby, HTML, CSS, React, Node.js, Ruby on Rails, Express, Mongoose, Bootstrap, Sass, jQuery, JWT, RESTful-API, JSON, DOM
+</p>
+            </Description>
+            <Description>
+<strong>Methodoligies</strong>
+<p>
+Object Oriented Programming, MVC, Responsive Design, Authentication, Agile/Scrum, Troubleshooting/Debugging
+</p>
+            </Description>
+            <Description>
+<strong>DataBases</strong>
+<p>
+SQL, PostgreSQL, MongoDB
 </p>
 </Description>
 <Description>
 <strong>Tools</strong>
 <p>
-VScode, Github, Codepen etc.
+VScode, Github, Codepen, Git, GitHub, Command Line, RSpec, Heroku, Netlify
 </p>
 </Description>
 

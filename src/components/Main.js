@@ -26,7 +26,7 @@ h2,h3,h4,h5,h6{
 const Container = styled.div`
 padding: 2rem;
 `
-const Resume = styled(NavLink)`
+const Resume = styled.a`
 color: ${props => props.theme.text};
 position: absolute;
 top 2rem;
@@ -136,14 +136,14 @@ function Main() {
             <span>Click Here</span>
           </Center>
         
-        <Resume target="_blank" to={{pathname:"https://drive.google.com/file/d/1aWIzhp2ovUGvPkZTsaJUEJhoQm26DoTq/view"}}>
+        <Resume target="_blank" href="https://drive.google.com/file/d/1aWIzhp2ovUGvPkZTsaJUEJhoQm26DoTq/view">
           <motion.h2
           
             whileHover={{scale: 1.1}}
           whileTap={{scale: 0.9}}
             
           >
-            Resume.
+            Resume
           </motion.h2>
         </Resume>
 
@@ -152,11 +152,11 @@ function Main() {
             whileHover={{scale: 1.1}}
             whileTap={{scale: 0.9}} 
             >
-              Blog.
+              Blog
            </motion.h2>
         </Blog>
 
-        <Work to="/work" click={click} >
+        <Work to="/work" click={+click} >
         <motion.h2
             whileHover={{scale: 1.1}}
             whileTap={{scale: 0.9}} 
@@ -166,12 +166,12 @@ function Main() {
         </Work>
 
      <BottomBar>
-        <About to="/about" click={click} >
+        <About to="/about" click={+click} >
         <motion.h2
             whileHover={{scale: 1.1}}
             whileTap={{scale: 0.9}} 
             >
-              About.
+              About
            </motion.h2>
         </About>
         <Skills to="/skills">
@@ -179,7 +179,7 @@ function Main() {
             whileHover={{scale: 1.1}}
             whileTap={{scale: 0.9}} 
             >
-              My Skills.
+              My Skills
            </motion.h2>
         </Skills>
     </BottomBar>
