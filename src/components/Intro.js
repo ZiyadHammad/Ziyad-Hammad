@@ -80,7 +80,7 @@ function Intro() {
            animate={{ opacity: 1 }}
            transition={{type: "spring", duration:1, delay:2}}
         >
-          <img className='Me' src={Me} alt="Profile Picture"/>
+          <img className='Me' src={Me} alt="Profile"/>
         </motion.div>
       </SubBox>
     </Box>
