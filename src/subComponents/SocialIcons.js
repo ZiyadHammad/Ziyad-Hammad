@@ -1,8 +1,11 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
 import { Github, LinkedIn, Twitter } from '../components/AllSvgs'
 import styled from "styled-components"
 import { darkTheme } from '../components/Themes'
+
+const Box = styled.a`
+text-decoration: none;
+`
 
 const Icons = styled.div`
 display: flex;
@@ -24,6 +27,7 @@ const Line = styled.span`
 width: 2px;
 height: 8rem;
 background-color: ${props => props.color = "dark" ? darkTheme.text : darkTheme.body};
+
 `
 
 function SocialIcons(props) {
@@ -31,21 +35,21 @@ function SocialIcons(props) {
     <Icons>
 
       <div>
-        <NavLink style={{color: "inherit"}} target="_blank" to={{pathname:"https://github.com/ZiyadHammad"}}>
+        <Box style={{color: "inherit"}} target="_blank" href="https://github.com/ZiyadHammad" >
           <Github  width={25} height={25} fill={ props.theme === "dark" ? darkTheme.text : darkTheme.body } />
-        </NavLink>
+        </Box>
       </div>
 
       <div>
-        <NavLink style={{color: "inherit"}} target="_blank" to={{pathname:"https://www.linkedin.com/in/ziyad-hammad/"}}>
+        <Box style={{color: "inherit"}} target="_blank" href="https://www.linkedin.com/in/ziyad-hammad/">
           <LinkedIn width={25} height={25} fill={ props.theme === "dark" ? darkTheme.text : darkTheme.body } />
-        </NavLink>
+        </Box>
       </div>
 
       <div>
-        <NavLink style={{color: "inherit"}} target="_blank" to={{pathname:"https://twitter.com/_ZiyadHammad"}}>
+        <Box style={{color: "inherit"}} target="_blank" href="https://twitter.com/_ZiyadHammad" >
           <Twitter width={25} height={25} fill={ props.theme === "dark" ? darkTheme.text : darkTheme.body } />
-        </NavLink>
+        </Box>
       </div>
 
       <Line color={props.theme} />
