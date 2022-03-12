@@ -26,7 +26,7 @@ z-index: 3;
 const Line = styled.span`
 width: 2px;
 height: 8rem;
-background-color: ${props => props.color = "dark" ? darkTheme.text : darkTheme.body};
+background-color: ${props => props.color === "dark" ? darkTheme.text : darkTheme.body};
 
 `
 

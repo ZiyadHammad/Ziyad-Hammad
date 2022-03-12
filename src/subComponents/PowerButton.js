@@ -30,7 +30,7 @@ cursor: pointer;
 
 &>*:first-child{
   text-decoration: none;
-  color: inherit;
+  // color: inherit;
 }
 `
 

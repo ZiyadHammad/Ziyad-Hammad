@@ -63,10 +63,10 @@ const AboutPage = () => {
         <ThemeProvider theme={darkTheme}>
 <Box>
 
-<LogoComponent theme='dark'/>
-<SocialIcons theme='dark'/>
-          <PowerButton />
-<ParticleComponent theme='dark' />
+          <LogoComponent theme='dark'/>
+          <SocialIcons theme='dark'/>
+          <PowerButton style={{background: "#fcf6f4"}} />
+          <ParticleComponent theme='dark' />
 
         <Spaceman>
             <img src={astronaut} alt="spaceman" />
