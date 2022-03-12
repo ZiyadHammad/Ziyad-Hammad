@@ -22,7 +22,7 @@ background-position: center;
 const Container = styled.div`
 background-color: ${props => `rgba(${props.theme.bodyRgba},0.8)`};
 width: 100%;
-height:100vh;
+height:100%;
 position: relative;
 padding-bottom: 5rem;
 `

@@ -121,15 +121,10 @@ I love to create design which speaks, Keep it clean, minimal and simple.
 <Description>
 <strong>Skills</strong>
 <p>
-Js, Ruby, HTML, CSS, React, Node.js, Ruby on Rails, Express, Mongoose, Bootstrap, Sass, jQuery, JWT, RESTful-API, JSON, DOM
+Js, Ruby, HTML, CSS, React, Node.js, Ruby on Rails, Express, Mongoose, Bootstrap, Sass, jQuery, JWT, REST-API, JSON, DOM
 </p>
             </Description>
-            <Description>
-<strong>Methodoligies</strong>
-<p>
-Object Oriented Programming, MVC, Responsive Design, Authentication, Agile/Scrum, Troubleshooting/Debugging
-</p>
-            </Description>
+          
             <Description>
 <strong>DataBases</strong>
 <p>
@@ -139,7 +134,7 @@ SQL, PostgreSQL, MongoDB
 <Description>
 <strong>Tools</strong>
 <p>
-VScode, Github, Codepen, Git, GitHub, Command Line, RSpec, Heroku, Netlify
+VScode, Github, Codepen, Git, GitHub, CLI, RSpec, Heroku, Netlify
 </p>
 </Description>
 
