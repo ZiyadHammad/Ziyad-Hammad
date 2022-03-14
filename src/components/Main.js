@@ -136,7 +136,7 @@ function Main() {
             <span>Click Here</span>
           </Center>
         
-        <Resume target="_blank" href="https://drive.google.com/file/d/1OWlJdoZbON6zzPWxJoMsQNJmnCaWCjGn/view">
+        <Resume target="_blank" href="https://drive.google.com/file/d/1oOrGo0lUDzUYovWmD0eB_fX-hYDd9OU4/view?usp=sharing">
           <motion.h2
           
             whileHover={{scale: 1.1}}
