@@ -1,4 +1,4 @@
-import img1 from "../assets/Images/Noted.png"
+import img1 from "../assets/Images/OpenJobs.png"
 import img2 from "../assets/Images/Code.png"
 import img3 from "../assets/Images/Every.png"
 import img4 from "../assets/Images/Food.png"
@@ -7,9 +7,9 @@ import img4 from "../assets/Images/Food.png"
 export const Projects = [
     {
         id:1,
-        name:"NOTED: A Full-stack To-Do Web Application.",
-        tags:["React","Ruby on Rails","JWT"],
-        date:"13 May, 2021",
+        name:"Open Job Listing: A Open Job Listing Web App",
+        tags:["React","Firebase","MUI"],
+        date:"24 March, 2022",
         imgSrc: `${img1}`,
         link:"https://znoted-app.netlify.app/"
     },
