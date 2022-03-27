@@ -315,9 +315,8 @@ function Main() {
      <BottomBar>
           <About
             to="/about"
-            click={+click}
             onClick={() => setClick(false)}
-            click={mq ? +false : +click}
+            click={mq ? +false : +click}        
           >
             <motion.h2
               initial={{
