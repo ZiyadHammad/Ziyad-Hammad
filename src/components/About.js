@@ -1,6 +1,7 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import styled, { keyframes, ThemeProvider } from 'styled-components'
-import {darkTheme} from './Themes';
+import {darkTheme, mediaQueries} from './Themes';
 
 
 import LogoComponent from '../subComponents/LogoComponent';
@@ -23,7 +24,7 @@ const float = keyframes`
 50% { transform: translateY(15px) translateX(15px) }
 100% { transform: translateY(-10px) }
 `
-const Spaceman = styled.div`
+const Spaceman = styled(motion.div)`
 position: absolute;
 top: 10%;
 right: 5%;
@@ -53,6 +54,27 @@ const Main =  styled.div`
   top: 10rem;
   font-family: 'Ubuntu Mono', monospace;
   font-style: italic;
+  ${mediaQueries(40)`
+          width: 60vw;
+          height: 50vh;
+          top:50%;
+          left:50%;
+          transform:translate(-50%,-50%);
+
+
+  `};
+  ${mediaQueries(30)`
+          width: 50vw;
+          height: auto;
+          backdrop-filter: none;
+          margin-top:2rem;
+
+  `};
+
+${mediaQueries(20)`
+          padding: 1rem;
+          font-size: calc(0.5rem + 1vw);
+  `};
 `
 
 
@@ -68,7 +90,14 @@ const AboutPage = () => {
           <PowerButton style={{background: "#fcf6f4"}} />
           <ParticleComponent theme='dark' />
 
-        <Spaceman>
+          <Spaceman
+            initial={{ right: '-20%', top: '100%' }}
+            animate={{
+              right: '5%',
+              top: '10%',
+              transition: { duration: 2, delay: 0.5 },
+            }}
+          >
             <img src={astronaut} alt="spaceman" />
         </Spaceman>    
         <Main>

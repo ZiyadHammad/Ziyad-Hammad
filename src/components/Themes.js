@@ -15,3 +15,6 @@ export const darkTheme = {
   textRgba : "252, 246, 244",
   bodyRgba:"0,0,0",
 }
+export const mediaQueries = key => {
+  return style => `@media (max-width: ${key}em) { ${style} }`
+}
