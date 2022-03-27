@@ -217,7 +217,7 @@ function Main() {
           <Resume
             click={+click}
             target="_blank"
-            href="https://drive.google.com/file/d/1oOrGo0lUDzUYovWmD0eB_fX-hYDd9OU4/view?usp=sharing"
+            href="https://drive.google.com/file/d/1k6TTK8qgu9fLYFDPmK1JqBt7oYOOWW_-/view?usp=sharing"
           >
               <motion.h3
                 initial={{
@@ -238,7 +238,7 @@ function Main() {
             <Resume
               click={+false}
               target="_blank"
-              href="https://drive.google.com/file/d/1oOrGo0lUDzUYovWmD0eB_fX-hYDd9OU4/view?usp=sharing"
+              href="https://drive.google.com/file/d/1k6TTK8qgu9fLYFDPmK1JqBt7oYOOWW_-/view?usp=sharing"
             >
               <motion.h3
                 initial={{
