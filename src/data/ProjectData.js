@@ -11,7 +11,7 @@ export const Projects = [
         tags:["React","Firebase","MUI"],
         date:"24 March, 2022",
         imgSrc: `${img1}`,
-        link:"https://znoted-app.netlify.app/"
+        link:"https://open-job-lisitng.netlify.app/"
     },
     {
         id:2,

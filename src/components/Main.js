@@ -166,6 +166,7 @@ width: 0;
 function Main() {
   const [click, setClick] = useState(false)
   const [path, setpath] = useState("");
+  
   const moveY = {
     y: "-100%",
   };
