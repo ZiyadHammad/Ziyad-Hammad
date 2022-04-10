@@ -19,8 +19,6 @@ const MainContainer = styled(motion.div)`
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  width: 100vw;
-  height: 100vh;
 `;
 
 const Container = styled.div`
